@@ -180,9 +180,7 @@ sector1:AddToggle("Aimlock",false,function(L_122_arg0)
 L_24_ = L_122_arg0
 end)
 
-sector1:AddToggle("Team Check",false,function(L_126_arg0)
-getgenv().TeamCheck = L_126_arg0
-end)
+
 
 sector1:AddToggle("Airshot Function",false,function(L_131_arg0)
 CheckIfJumped =  L_131_arg0
@@ -200,9 +198,7 @@ sector1:AddTextbox("Aimlock Prediction",false,function(L_124_arg0)
 PredictionVelocity = L_124_arg0
 end)
 
-sector1:AddTextbox("Aimlock Radius Func",false,function(L_133_arg0)
-getgenv().AimRadius = L_133_arg0
-end)
+
 
 sector1:AddDropdown("Bodypart",{"Head";"UpperTorso";"HumanoidRootPart", "LowerTorso"},"HumanoidRootPart",false, function(L_125_arg0)
 getgenv().AimPart = L_125_arg0
@@ -220,7 +216,7 @@ sector22:AddToggle("Silent Aim",false,function(t)
 Aiming.Enabled =t
 end)
 
-local button = sector22:AddButton("Silent Dot",false,function()
+local button = sector22:AddButton("Silent Dot (CS)",false,function()
 _G.KEY = "q"
 _G.PART = "HumanoidRootPart"
 _G.PRED = 0.057
@@ -449,7 +445,7 @@ while wait() do
 end
 end)
 
-local button = sector22:AddButton("Hitbox",false,function()
+local button = sector22:AddButton("Hitbox (CS) ",false,function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PriorThey413001/hitboxexpander/main/eoeoe"))()
 end)
 
