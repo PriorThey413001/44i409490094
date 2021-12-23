@@ -216,7 +216,7 @@ sector22:AddToggle("Silent Aim",false,function(t)
 Aiming.Enabled =t
 end)
 
-local button = sector22:AddButton("Silent Dot (CS)",false,function()
+local toggle = sector22:AddToggle("Silent Dot",false,function()
 _G.KEY = "q"
 _G.PART = "HumanoidRootPart"
 _G.PRED = 0.057
@@ -445,7 +445,7 @@ while wait() do
 end
 end)
 
-local button = sector22:AddButton("Hitbox (CS) ",false,function()
+local toggle = sector22:AddButton("Hitbox (CS)",false,function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/PriorThey413001/hitboxexpander/main/eoeoe"))()
 end)
 
@@ -2933,7 +2933,7 @@ sector16:AddButton("Teleport G Station", function()
 	end	
       end)
 
- sector16:AddButton("Godmode (Guns)", function()
+ sector16:AddButton("Godmode (Patched)", function()
     local L_424_ = game.Players.LocalPlayer
 
 	L_424_.Character:FindFirstChild("FULLY_LOADED_CHAR").Parent = game.ReplicatedStorage
